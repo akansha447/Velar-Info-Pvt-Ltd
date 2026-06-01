@@ -1,7 +1,9 @@
 {
   "/page": "app/page.js",
   "/services/ai-chatbots/page": "app/services/ai-chatbots/page.js",
-  "/company/about-us/page": "app/company/about-us/page.js",
+  "/services/ai-automation/page": "app/services/ai-automation/page.js",
+  "/services/generative-ai/page": "app/services/generative-ai/page.js",
+  "/services/voice-ai/page": "app/services/voice-ai/page.js",
   "/services/custom-ai/page": "app/services/custom-ai/page.js",
-  "/industries/page": "app/industries/page.js"
+  "/services/ai-consulting/page": "app/services/ai-consulting/page.js"
 }

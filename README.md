@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Velar Info Pvt. Ltd. — Marketing Website
 
 Production-ready Next.js 14 marketing website for Velar Info Pvt Ltd, built with Tailwind CSS, Framer Motion, and Lucide icons.
@@ -34,3 +35,7 @@ Navigate to `http://localhost:3000`.
 - Uses Next.js App Router with `@next/font/google` Inter font
 - Animations are implemented with Framer Motion
 - Fully responsive with mobile, tablet, and desktop layouts
+=======
+# Velar-Info-Pvt-Ltd
+Official repository for Velar Info Ltd projects, solutions, and development resources.
+>>>>>>> a825650a9bd842019d91ceba02563a6154f890c4

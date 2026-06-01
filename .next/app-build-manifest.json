@@ -1,35 +1,45 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/company/about-us/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/company/about-us/page.js"
+      "static/chunks/app/page.js"
     ],
     "/services/ai-chatbots/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/services/ai-chatbots/page.js"
     ],
-    "/industries/page": [
+    "/services/ai-automation/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/industries/page.js"
+      "static/chunks/app/services/ai-automation/page.js"
+    ],
+    "/services/voice-ai/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/voice-ai/page.js"
+    ],
+    "/services/generative-ai/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/generative-ai/page.js"
     ],
     "/services/custom-ai/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/services/custom-ai/page.js"
+    ],
+    "/services/ai-consulting/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/ai-consulting/page.js"
     ]
   }
 }
