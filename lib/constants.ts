@@ -478,7 +478,7 @@ export const navGroups: NavGroup[] = [
         ],
     },
     {
-        label: 'Solutions',
+        label: 'AI & GenX Platforms',
         items: [
             { label: 'Enterprise AI Solutions' },
             { label: 'SMB & Startup AI Solutions' },

@@ -9,12 +9,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: '#16436a',
-        surface: 'rgba(133, 49, 49, 0.82)',
+        background: '#f8faf7',
+        surface: 'rgba(255, 255, 255, 0.86)',
         surfaceStrong: 'rgba(15, 23, 42, 0.08)',
-        primaryFrom: '#3a2b1f',
-        primaryMid: '#8c785d',
-        primaryTo: '#d4b58f',
+        primaryFrom: '#0f766e',
+        primaryMid: '#f97316',
+        primaryTo: '#f5f1ea',
       },
       boxShadow: {
         glow: '0 20px 80px rgba(156, 130, 95, 0.14)',

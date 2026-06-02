@@ -8,33 +8,32 @@ export default function CTABanner() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
-      className="relative overflow-hidden bg-[#070b1a] px-6 py-20 sm:px-8 lg:px-10"
+      className="relative overflow-hidden bg-[#f8faf7] px-6 py-20 text-slate-950 sm:px-8 lg:px-10"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(79,70,229,0.2),_transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(6,182,212,0.14),_transparent_20%)]" />
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-transparent to-slate-950/90" />
-      <div className="relative mx-auto max-w-6xl rounded-[2rem] border border-white/10 bg-white/5 p-10 shadow-glow backdrop-blur-xl sm:p-14">
+      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(249,115,22,.12),transparent_42%),radial-gradient(circle_at_80%_20%,rgba(20,184,166,.16),transparent_26%)]" />
+      <div className="relative mx-auto max-w-6xl border border-slate-950/10 bg-white p-8 shadow-[0_24px_90px_rgba(15,23,42,.10)] sm:p-12">
         <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">Ready to Transform Your Business with AI?</p>
-            <h2 className="mt-4 text-3xl font-extrabold leading-tight text-white sm:text-4xl">
-              Book a free 30-minute AI consultation. No commitment. Just clarity.
+            <p className="text-sm font-black uppercase tracking-[0.28em] text-teal-700">Contact</p>
+            <h2 className="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-5xl">
+              Ready to build the AI system your team actually needs?
             </h2>
-            <p className="mt-4 max-w-2xl text-base leading-7 text-slate-300">
-              Get expert guidance on AI chatbots, voice automation, and customized enterprise AI that accelerates growth.
+            <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
+              Book a free 30-minute consultation and leave with a practical AI roadmap for chatbots, voice automation, or custom enterprise systems.
             </p>
           </div>
 
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-end">
-            <button className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-primaryFrom via-primaryMid to-primaryTo px-6 py-3 text-sm font-semibold text-slate-950 shadow-glow transition hover:opacity-95">
+            <button className="inline-flex items-center justify-center bg-slate-950 px-6 py-3 text-sm font-black text-white shadow-glow transition hover:bg-teal-800">
               Book Free Demo
             </button>
-            <button className="inline-flex items-center justify-center rounded-full border border-white/10 bg-slate-950/80 px-6 py-3 text-sm font-semibold text-white transition hover:border-primaryMid hover:text-white">
+            <button className="inline-flex items-center justify-center border border-slate-950/12 bg-white px-6 py-3 text-sm font-black text-slate-950 transition hover:border-teal-700 hover:text-teal-800">
               Talk to an Expert
             </button>
           </div>
         </div>
 
-        <p className="mt-8 text-center text-sm text-slate-400">🇮🇳 Proudly Made in India | Serving clients across India & globally</p>
+        <p className="mt-8 border-t border-slate-950/10 pt-6 text-center text-sm text-slate-500">Proudly made in India. Serving clients across India and globally.</p>
       </div>
     </motion.section>
   )
