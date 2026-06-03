@@ -1,3 +1,7 @@
 {
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/services/ai-chatbots/page": "app/services/ai-chatbots/page.js",
+  "/services/ai-automation/page": "app/services/ai-automation/page.js",
+  "/services/voice-ai/page": "app/services/voice-ai/page.js",
+  "/services/generative-ai/page": "app/services/generative-ai/page.js"
 }
