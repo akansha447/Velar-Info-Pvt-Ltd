@@ -19,34 +19,42 @@ export default function Navbar() {
   }, [])
 
   return (
-    <header className={`sticky top-0 z-50 transition duration-300 ${scrolled ? 'border-b border-slate-950/10 bg-white/90 shadow-[0_10px_40px_rgba(15,23,42,.06)] backdrop-blur-xl' : 'bg-transparent'
-      }`}>
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <header className={`fixed left-1/2 top-4 z-50 w-[calc(100%-1.5rem)] max-w-7xl -translate-x-1/2 border transition duration-300 ${
+      scrolled
+        ? 'border-slate-950/10 bg-white/95 text-slate-950 shadow-[0_18px_60px_rgba(15,23,42,.12)] backdrop-blur-xl'
+        : 'border-white/15 bg-slate-950/58 text-white shadow-[0_18px_60px_rgba(0,0,0,.24)] backdrop-blur-xl'
+    }`}>
+      <div className="mx-auto flex items-center justify-between px-4 py-3 sm:px-5">
         <div className="flex items-center gap-6">
-          <div className="space-y-1">
-            <div className="text-xl font-black tracking-tight text-slate-950">Velar Info</div>
-            <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Powered by AI</p>
-          </div>
+          <Link href="/" className="flex items-center gap-3">
+            <span className={`flex h-11 w-11 items-center justify-center bg-white text-lg font-black ${scrolled ? 'text-orange-700' : 'text-slate-950'}`}>
+              V
+            </span>
+            <span className="space-y-1">
+              <span className={`block text-xl font-black tracking-tight ${scrolled ? 'text-slate-950' : 'text-white'}`}>Velar Info</span>
+              <span className={`block text-xs uppercase tracking-[0.28em] ${scrolled ? 'text-slate-500' : 'text-white/58'}`}>Powered by AI</span>
+            </span>
+          </Link>
 
-          <nav className="hidden items-center gap-6 text-sm text-slate-700 md:flex">
+          <nav className={`hidden items-center gap-6 text-sm font-bold md:flex ${scrolled ? 'text-slate-700' : 'text-white/78'}`}>
             {navGroups.map((group) => (
               <div key={group.label} className="group relative">
-                <button className="inline-flex items-center gap-1 text-slate-700 transition hover:text-teal-800">
+                <button className={`inline-flex items-center gap-1 transition ${scrolled ? 'hover:text-orange-700' : 'hover:text-cyan-200'}`}>
                   {group.label} <ChevronDown size={14} />
                 </button>
-                <div className="invisible pointer-events-none absolute left-0 top-full z-30 mt-2 w-72 border border-slate-950/10 bg-white/96 p-4 opacity-0 shadow-[0_18px_60px_rgba(15,23,42,.12)] backdrop-blur-xl transition duration-200 group-hover:visible group-hover:pointer-events-auto group-hover:opacity-100">
+                <div className="invisible pointer-events-none absolute left-0 top-full z-30 mt-3 w-80 border border-slate-950/10 bg-white/95 p-4 opacity-0 shadow-[0_18px_60px_rgba(15,23,42,.14)] backdrop-blur-xl transition duration-200 group-hover:visible group-hover:pointer-events-auto group-hover:opacity-100">
                   <ul className="space-y-2 text-sm text-slate-700">
                     {group.items.map((item) => {
                       const active = item.href && pathname === item.href
                       return (
                         <li key={item.label}>
-                          <a
+                          <Link
                             href={item.href ?? '#'}
-                            className={`block px-3 py-2 transition ${active ? 'bg-slate-950 text-white' : 'hover:bg-slate-100 hover:text-teal-800'
+                            className={`block px-3 py-2 transition ${active ? 'bg-slate-950 text-white' : 'hover:bg-slate-100 hover:text-orange-700'
                               }`}
                           >
                             {item.label}
-                          </a>
+                          </Link>
                         </li>
                       )
                     })}
@@ -54,20 +62,20 @@ export default function Navbar() {
                 </div>
               </div>
             ))}
-            <Link href="/company/contact" className="text-slate-700 transition hover:text-teal-800">
+            <Link href="/company/contact" className={`transition ${scrolled ? 'hover:text-orange-700' : 'hover:text-cyan-200'}`}>
               Contact Us
             </Link>
           </nav>
         </div>
 
         <div className="flex items-center gap-3">
-          <button className="hidden bg-slate-950 px-5 py-2.5 text-sm font-black text-white transition hover:bg-teal-800 md:inline-flex">
+          <Link href="/company/contact" className="hidden bg-orange-600 px-5 py-2.5 text-sm font-black text-white transition hover:bg-orange-700 md:inline-flex">
             Get a Free Demo
-          </button>
+          </Link>
 
           <button
             aria-label="Open mobile menu"
-            className="inline-flex border border-slate-950/10 bg-white p-3 text-slate-950 transition hover:border-teal-700 hover:text-teal-800 md:hidden"
+            className="inline-flex border border-slate-950/10 bg-white p-3 text-slate-950 transition hover:border-orange-700 hover:text-orange-700 md:hidden"
             onClick={() => setMenuOpen(true)}
           >
             <Menu size={20} />
@@ -110,7 +118,7 @@ export default function Navbar() {
                         key={item.label}
                         href={item.href ?? '#'}
                         onClick={() => setMenuOpen(false)}
-                        className="block w-full px-4 py-3 text-left text-sm text-slate-700 transition hover:bg-white hover:text-teal-800"
+                    className="block w-full px-4 py-3 text-left text-sm text-slate-700 transition hover:bg-white hover:text-orange-700"
                       >
                         {item.label}
                       </Link>
@@ -121,15 +129,16 @@ export default function Navbar() {
             </div>
 
             <div className="mt-8 flex flex-col gap-4">
-              <button className="w-full bg-slate-950 px-5 py-3 text-sm font-black text-white">
+              <Link href="/company/contact" onClick={() => setMenuOpen(false)} className="w-full bg-slate-950 px-5 py-3 text-center text-sm font-black text-white">
                 Get a Free Demo
-              </button>
-              <button
+              </Link>
+              <Link
+                href="/company/contact"
                 className="w-full border border-slate-950/10 bg-white px-5 py-3 text-sm font-black text-slate-950"
                 onClick={() => setMenuOpen(false)}
               >
                 Contact Sales
-              </button>
+              </Link>
             </div>
           </motion.div>
         ) : null}

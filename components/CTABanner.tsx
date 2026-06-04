@@ -1,5 +1,6 @@
 "use client"
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export default function CTABanner() {
   return (
@@ -24,12 +25,12 @@ export default function CTABanner() {
           </div>
 
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-end">
-            <button className="inline-flex items-center justify-center bg-slate-950 px-6 py-3 text-sm font-black text-white shadow-glow transition hover:bg-teal-800">
+            <Link href="/company/contact" className="inline-flex items-center justify-center bg-slate-950 px-6 py-3 text-sm font-black text-white shadow-glow transition hover:bg-orange-700">
               Book Free Demo
-            </button>
-            <button className="inline-flex items-center justify-center border border-slate-950/12 bg-white px-6 py-3 text-sm font-black text-slate-950 transition hover:border-teal-700 hover:text-teal-800">
+            </Link>
+            <Link href="/company/contact" className="inline-flex items-center justify-center border border-slate-950/10 bg-white px-6 py-3 text-sm font-black text-slate-950 transition hover:border-orange-700 hover:text-orange-700">
               Talk to an Expert
-            </button>
+            </Link>
           </div>
         </div>
 

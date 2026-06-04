@@ -37,12 +37,12 @@ export default function ConsultingPage() {
                 'Change management support',
             ]}
             industries={[
-                'Enterprise teams',
-                'SMBs and startups',
-                'Government',
-                'Healthcare',
-                'Finance',
-                'Education',
+                'Healthcare & Lifesciences',
+                'Finance, Banking & Insurance (BFSI)',
+                'E-Commerce & Retail',
+                'Legal & Professional Services',
+                'Logistics & Supply Chain',
+                'Real Estate & PropTech',
             ]}
             caseStudyTitle="AI roadmap for multi-team rollout"
             caseStudyText="A structured audit identified automation opportunities, technical constraints, and a phased roadmap that helped leadership approve the first AI implementation sprint."

@@ -37,12 +37,12 @@ export default function AutomationPage() {
                 'Governance, logging, and approvals',
             ]}
             industries={[
-                'Finance',
-                'Human resources',
-                'IT operations',
-                'Manufacturing',
-                'Logistics',
-                'Professional services',
+                'Healthcare & Lifesciences',
+                'Finance, Banking & Insurance (BFSI)',
+                'E-Commerce & Retail',
+                'Legal & Professional Services',
+                'Logistics & Supply Chain',
+                'Real Estate & PropTech',
             ]}
             caseStudyTitle="Invoice workflow automation"
             caseStudyText="An AI workflow extracted invoice data, matched purchase orders, routed approvals, and logged every step for audit-ready finance operations."

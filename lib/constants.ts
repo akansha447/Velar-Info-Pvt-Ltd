@@ -39,14 +39,14 @@ export const heroStats = [
 ]
 
 export const trustLogos = [
-    'Enterprise Client',
-    'Govt. Body',
-    'FinTech Co.',
-    'Public Sector',
-    'Retail Chain',
+    'Enterprise AI',
     'Healthcare PSU',
+    'FinTech Co.',
+    'Retail Chain',
+    'LegalTech',
     'Logistics Firm',
-    'SaaS Startup',
+    'PropTech',
+    'Govt. Body',
 ]
 
 export const companyNavItems = [
@@ -59,11 +59,104 @@ export const companyNavItems = [
 export const industryNavItems = [
     { label: 'Industry Solutions', href: '/industries' },
     { label: 'Healthcare & Lifesciences', href: '/industries#healthcare-lifesciences' },
-    { label: 'Finance, Banking & Insurance', href: '/industries#finance-banking-insurance' },
+    { label: 'Finance, Banking & Insurance (BFSI)', href: '/industries#finance-banking-insurance' },
     { label: 'E-Commerce & Retail', href: '/industries#e-commerce-retail' },
     { label: 'Legal & Professional Services', href: '/industries#legal-professional-services' },
     { label: 'Logistics & Supply Chain', href: '/industries#logistics-supply-chain' },
     { label: 'Real Estate & PropTech', href: '/industries#real-estate-proptech' },
+]
+
+export const industryData = [
+    {
+        id: 'healthcare-lifesciences',
+        title: 'Healthcare & Lifesciences',
+        summary:
+            'Secure AI systems for clinical documentation, patient intake, appointment workflows, claims support, and compliant healthcare operations.',
+        image:
+            'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80',
+        cases: ['Patient triage', 'Clinical summarization', 'Claims support', 'Compliance workflows'],
+        problem:
+            'Doctors, clinicians, and operations teams spend too much time on paperwork, repetitive patient communication, and compliance logging.',
+        solution:
+            'We deploy secure AI scribes, virtual assistants, and workflow automations that reduce manual work while protecting patient data.',
+        benefit:
+            'Faster documentation, better patient experience, and cleaner operational visibility.',
+    },
+    {
+        id: 'finance-banking-insurance',
+        title: 'Finance, Banking & Insurance (BFSI)',
+        summary:
+            'AI-led automation for document processing, KYC, fraud triage, underwriting, customer support, and regulated financial workflows.',
+        image:
+            'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80',
+        cases: ['Fraud triage', 'Claims automation', 'KYC enrichment', 'Loan processing'],
+        problem:
+            'Financial institutions manage high document volume, fraud risk, strict compliance, and slow onboarding processes.',
+        solution:
+            'Custom AI models, RAG systems, and workflow agents analyze documents, detect risk signals, and accelerate approvals.',
+        benefit:
+            'Faster processing, stronger risk controls, and more responsive customer journeys.',
+    },
+    {
+        id: 'e-commerce-retail',
+        title: 'E-Commerce & Retail',
+        summary:
+            'Conversational commerce, intelligent support, product recommendations, returns automation, and customer journey optimization.',
+        image:
+            'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80',
+        cases: ['Personalized support', 'Order management', 'Returns automation', 'Loyalty workflows'],
+        problem:
+            'Modern buyers expect instant support, personalized shopping, and smooth post-purchase service across every channel.',
+        solution:
+            'AI chatbots and voice agents handle tracking, returns, product discovery, offers, and service workflows around the clock.',
+        benefit:
+            'Lower support pressure, higher conversion opportunities, and stronger customer retention.',
+    },
+    {
+        id: 'legal-professional-services',
+        title: 'Legal & Professional Services',
+        summary:
+            'AI contract review, intake automation, knowledge assistants, case research, compliance checks, and professional service workflows.',
+        image:
+            'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=900&q=80',
+        cases: ['Contract review', 'Case intake', 'Knowledge search', 'Compliance summaries'],
+        problem:
+            'Professional teams lose valuable hours reviewing dense documents, routing intake requests, and searching internal knowledge.',
+        solution:
+            'Tailored generative AI systems summarize files, highlight risks, draft standard documents, and route work to the right experts.',
+        benefit:
+            'Reduced review time, better consistency, and faster client-facing delivery.',
+    },
+    {
+        id: 'logistics-supply-chain',
+        title: 'Logistics & Supply Chain',
+        summary:
+            'AI workflows for route optimization, inventory visibility, shipment support, warehouse operations, and exception management.',
+        image:
+            'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80',
+        cases: ['Route planning', 'Inventory agents', 'Shipment support', 'Exception handling'],
+        problem:
+            'Fragmented communication, uncertain demand, route delays, and manual coordination create expensive operational friction.',
+        solution:
+            'AI agents connect logistics data, optimize routing, automate shipment communication, and flag exceptions before they escalate.',
+        benefit:
+            'Better fleet utilization, faster response times, and more predictable operations.',
+    },
+    {
+        id: 'real-estate-proptech',
+        title: 'Real Estate & PropTech',
+        summary:
+            'Lead qualification, property inquiry automation, appointment scheduling, CRM updates, and AI assistants for real estate teams.',
+        image:
+            'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80',
+        cases: ['Lead qualification', 'Viewing schedules', 'Property FAQs', 'CRM automation'],
+        problem:
+            'Property teams waste time chasing unqualified leads, repeating listing details, and manually scheduling site visits.',
+        solution:
+            'Voice and chat AI agents qualify buyers, answer property questions, schedule visits, and sync details into sales systems.',
+        benefit:
+            'More qualified pipeline, faster follow-up, and continuous lead engagement.',
+    },
 ]
 
 export const careerPerks = [
@@ -480,9 +573,9 @@ export const navGroups: NavGroup[] = [
     {
         label: 'AI & GenX Platforms',
         items: [
-            { label: 'Enterprise AI Solutions' },
-            { label: 'SMB & Startup AI Solutions' },
-            { label: 'Government & Public Sector AI' },
+            { label: 'Enterprise AI Solutions', href: '/#solutions' },
+            { label: 'SMB & Startup AI Solutions', href: '/#solutions' },
+            { label: 'Government & Public Sector AI', href: '/#solutions' },
         ],
     },
     {

@@ -37,12 +37,12 @@ export default function GenerativeAIPage() {
                 'Workflow and API integration',
             ]}
             industries={[
-                'Banking & finance',
-                'Healthcare',
-                'Retail & e-commerce',
-                'Government',
-                'Education',
-                'Logistics',
+                'Healthcare & Lifesciences',
+                'Finance, Banking & Insurance (BFSI)',
+                'E-Commerce & Retail',
+                'Legal & Professional Services',
+                'Logistics & Supply Chain',
+                'Real Estate & PropTech',
             ]}
             caseStudyTitle="AI knowledge assistant for operations"
             caseStudyText="A secure RAG assistant connected teams to policies, SOPs, and project documents, cutting search time and improving answer consistency."

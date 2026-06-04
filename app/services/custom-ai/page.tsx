@@ -37,12 +37,12 @@ export default function CustomAIPage() {
                 'Cloud deployment and MLOps',
             ]}
             industries={[
-                'Healthcare',
-                'Finance',
-                'Manufacturing',
-                'Retail',
-                'Logistics',
-                'SaaS platforms',
+                'Healthcare & Lifesciences',
+                'Finance, Banking & Insurance (BFSI)',
+                'E-Commerce & Retail',
+                'Legal & Professional Services',
+                'Logistics & Supply Chain',
+                'Real Estate & PropTech',
             ]}
             caseStudyTitle="Custom AI decision-support platform"
             caseStudyText="A tailored AI system combined business data, predictive models, and dashboards to help teams prioritize actions and reduce manual analysis."

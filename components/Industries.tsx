@@ -1,41 +1,52 @@
 "use client"
-const industries = [
-  { title: 'Banking & Insurance', cases: ['Fraud Triage', 'Claims Automation', 'KYC enrichment', 'Loan processing'] },
-  { title: 'Retail & Enterprises', cases: ['Personalized support', 'Order management', 'Returns automation', 'Loyalty workflows'] },
-  { title: 'Telecom & Utilities', cases: ['Network ops', 'Billing support', 'Service provisioning', 'Outage response'] },
-  { title: 'Healthcare & Pharma', cases: ['Patient triage', 'Clinical summarization', 'Claims', 'Regulatory workflows'] },
-  { title: 'Travel & Hospitality', cases: ['Booking assistants', 'Cancellations', 'Itinerary management', 'Feedback analysis'] },
-  { title: 'Public Sector & PSUs', cases: ['Citizen services', 'Case routing', 'Document processing', 'Compliance'] },
-]
+
+import Link from 'next/link'
+import { ArrowUpRight } from 'lucide-react'
+import { industryData } from '../lib/constants'
 
 export default function Industries() {
   return (
-    <section className="bg-slate-950 py-20 text-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="mb-10 max-w-3xl">
-          <p className="text-sm font-black uppercase tracking-[0.28em] text-teal-300">Industries</p>
-          <h2 className="mt-4 text-4xl font-black leading-tight sm:text-5xl">
-            Deep industry knowledge meets smart technology.
-          </h2>
-          <p className="mt-5 text-base leading-8 text-slate-300">
-            We deliver AI systems and automation platforms engineered for the unique demands of banking, healthcare, retail, telecom, logistics, and government services.
+    <section id="industries" className="bg-slate-950 px-6 py-24 text-white sm:px-8 lg:px-10 lg:py-32">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-12 grid gap-8 lg:grid-cols-[.82fr_1fr] lg:items-end">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.28em] text-cyan-200">Industries</p>
+            <h2 className="mt-4 max-w-4xl text-4xl font-black leading-[1.04] tracking-normal text-white sm:text-6xl">
+              Deep industry knowledge meets smart technology.
+            </h2>
+          </div>
+          <p className="max-w-2xl text-base font-semibold leading-8 text-white/64 lg:ml-auto">
+            We build AI systems around sector-specific workflows, compliance expectations, data structures, and customer journeys.
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
-          {industries.map((industry) => (
-            <div key={industry.title} className="glass-card rounded-3xl border border-white/10 p-6 shadow-soft transition hover:-translate-y-1">
-              <h3 className="text-xl font-bold text-white">{industry.title}</h3>
-              <ul className="mt-4 space-y-2 text-sm text-slate-300">
-                {industry.cases.map((caseItem) => (
-                  <li key={caseItem} className="flex items-start gap-3">
-                    <span className="mt-1 inline-flex h-2 w-2 rounded-full bg-teal-300" />
-                    <span>{caseItem}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-6 text-sm font-semibold text-teal-200">Explore Solutions →</div>
-            </div>
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          {industryData.map((industry, index) => (
+            <Link
+              key={industry.id}
+              href={`/industries#${industry.id}`}
+              className="group relative min-h-[420px] overflow-hidden border border-white/10 bg-slate-900"
+            >
+              <img src={industry.image} alt="" className="absolute inset-0 h-full w-full object-cover opacity-70 transition duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,.12),rgba(2,6,23,.94))]" />
+              <div className="absolute inset-x-0 bottom-0 p-7">
+                <span className="text-xs font-black uppercase tracking-[0.22em] text-cyan-200">0{index + 1}</span>
+                <h3 className="mt-4 text-2xl font-black leading-tight text-white">{industry.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-white/68">{industry.summary}</p>
+                <ul className="mt-5 grid gap-2 text-sm text-white/72">
+                  {industry.cases.slice(0, 3).map((caseItem) => (
+                    <li key={caseItem} className="flex items-center gap-3">
+                      <span className="h-1.5 w-1.5 bg-orange-500" />
+                      {caseItem}
+                    </li>
+                  ))}
+                </ul>
+                <span className="mt-6 inline-flex items-center gap-2 text-sm font-black text-white">
+                  Explore industry
+                  <ArrowUpRight size={16} />
+                </span>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

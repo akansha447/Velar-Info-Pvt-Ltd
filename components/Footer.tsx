@@ -1,68 +1,82 @@
-import { Linkedin, Twitter, Instagram } from 'lucide-react'
-
-const links = {
-  services: ['AI Chatbots', 'Voice AI', 'Automation', 'Custom AI', 'Consulting'],
-  solutions: ['Enterprise', 'SMB & Startups', 'Government'],
-  company: ['About Us', 'Blog', 'Careers', 'Privacy Policy', 'Terms'],
-}
+import Link from 'next/link'
+import { Instagram, Linkedin, Twitter } from 'lucide-react'
+import { companyNavItems, industryNavItems, servicesData } from '../lib/constants'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-slate-950/90 text-slate-300">
-      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-4 md:px-8">
-        <div className="space-y-4">
-          <div className="text-2xl font-semibold text-white">Velar Info Pvt Ltd</div>
-          <p className="max-w-sm text-sm leading-6 text-slate-400">
-            Intelligent AI Solutions for a Smarter India, built for enterprises, SMBs, startups, and government organizations.
+    <footer className="border-t border-white/10 bg-[#05080e] text-slate-300">
+      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 sm:px-8 lg:grid-cols-[1.15fr_1fr_1fr_1fr] lg:px-10">
+        <div className="space-y-5">
+          <div>
+            <div className="text-2xl font-black text-white">Velar Info Pvt Ltd</div>
+            <p className="mt-2 text-xs font-bold uppercase tracking-[0.28em] text-slate-500">Powered by AI</p>
+          </div>
+          <p className="max-w-sm text-sm font-semibold leading-7 text-slate-400">
+            Intelligent AI chatbots, voice agents, automation workflows, and custom AI platforms for enterprises, SMBs, startups, and public sector teams.
           </p>
-        </div>
-
-        <div>
-          <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Services</h3>
-          <ul className="mt-4 space-y-3 text-sm text-slate-300">
-            {links.services.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Solutions</h3>
-          <ul className="mt-4 space-y-3 text-sm text-slate-300">
-            {links.solutions.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Company</h3>
-          <ul className="mt-4 space-y-3 text-sm text-slate-300">
-            {links.company.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <div className="mt-6 space-y-2 text-sm text-slate-400">
-            <p>📧 hello@velarinfo.com</p>
-            <p>📞 +91-XXXXXXXXXX</p>
-            <p>📍 India</p>
+          <div className="space-y-2 text-sm font-semibold text-slate-400">
+            <p>hello@velarinfo.com</p>
+            <p>+91-XXXXXXXXXX</p>
+            <p>India</p>
           </div>
-          <div className="mt-6 flex items-center gap-3 text-slate-200">
-            <a href="#" aria-label="LinkedIn">
-              <Linkedin size={20} />
+          <div className="flex items-center gap-3 text-slate-200">
+            <a href="#" aria-label="LinkedIn" className="border border-white/10 p-2 transition hover:border-orange-500 hover:text-orange-400">
+              <Linkedin size={18} />
             </a>
-            <a href="#" aria-label="Twitter">
-              <Twitter size={20} />
+            <a href="#" aria-label="Twitter" className="border border-white/10 p-2 transition hover:border-orange-500 hover:text-orange-400">
+              <Twitter size={18} />
             </a>
-            <a href="#" aria-label="Instagram">
-              <Instagram size={20} />
+            <a href="#" aria-label="Instagram" className="border border-white/10 p-2 transition hover:border-orange-500 hover:text-orange-400">
+              <Instagram size={18} />
             </a>
           </div>
+        </div>
+
+        <div>
+          <h3 className="text-sm font-black uppercase tracking-[0.24em] text-slate-500">Services</h3>
+          <ul className="mt-5 space-y-3 text-sm font-semibold text-slate-300">
+            {servicesData.map((item) => (
+              <li key={item.title}>
+                <Link href={item.href ?? '/#services'} className="transition hover:text-orange-400">
+                  {item.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-sm font-black uppercase tracking-[0.24em] text-slate-500">Industries</h3>
+          <ul className="mt-5 space-y-3 text-sm font-semibold text-slate-300">
+            {industryNavItems.slice(1).map((item) => (
+              <li key={item.label}>
+                <Link href={item.href ?? '/industries'} className="transition hover:text-orange-400">
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-sm font-black uppercase tracking-[0.24em] text-slate-500">Company</h3>
+          <ul className="mt-5 space-y-3 text-sm font-semibold text-slate-300">
+            {companyNavItems.map((item) => (
+              <li key={item.label}>
+                <Link href={item.href} className="transition hover:text-orange-400">
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link href="/company/contact" className="mt-7 inline-flex bg-orange-600 px-5 py-3 text-sm font-black text-white transition hover:bg-orange-700">
+            Start a Project
+          </Link>
         </div>
       </div>
 
-      <div className="border-t border-white/10 bg-slate-950/95 px-6 py-5 text-center text-sm text-slate-500 md:px-8">
-        © 2026 Velar Info Pvt Ltd. All Rights Reserved.
+      <div className="border-t border-white/10 px-6 py-5 text-center text-sm font-semibold text-slate-500 sm:px-8">
+        Copyright © 2026 Velar Info Pvt Ltd. All Rights Reserved.
       </div>
     </footer>
   )

@@ -37,12 +37,12 @@ export default function VoiceAIPage() {
                 'Sentiment-aware escalation',
             ]}
             industries={[
-                'Healthcare',
-                'Banking & insurance',
-                'Retail & e-commerce',
-                'Real estate',
-                'Education',
-                'Government services',
+                'Healthcare & Lifesciences',
+                'Finance, Banking & Insurance (BFSI)',
+                'E-Commerce & Retail',
+                'Legal & Professional Services',
+                'Logistics & Supply Chain',
+                'Real Estate & PropTech',
             ]}
             caseStudyTitle="AI voice agent for high-volume support"
             caseStudyText="A multilingual voice bot handled repetitive customer calls, reduced queue pressure, and escalated complex cases to live agents with full conversation context."

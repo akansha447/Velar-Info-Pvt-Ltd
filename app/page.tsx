@@ -13,14 +13,14 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <TrustedBy />
       <CaseStudies />
-      <Services />
       <Industries />
+      <Services />
       <HowItWorks />
       <Solutions />
       <WhyVelar />
       <Testimonials />
+      <TrustedBy />
       <CTABanner />
     </>
   )

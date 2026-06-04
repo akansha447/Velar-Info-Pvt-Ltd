@@ -37,12 +37,12 @@ export default function ChatbotsPage() {
                 'Analytics and optimization',
             ]}
             industries={[
-                'Banking & finance',
-                'Healthcare',
-                'Retail & e-commerce',
-                'Education',
-                'SaaS',
-                'Government',
+                'Healthcare & Lifesciences',
+                'Finance, Banking & Insurance (BFSI)',
+                'E-Commerce & Retail',
+                'Legal & Professional Services',
+                'Logistics & Supply Chain',
+                'Real Estate & PropTech',
             ]}
             caseStudyTitle="Customer support chatbot rollout"
             caseStudyText="A web and WhatsApp assistant resolved frequent customer questions, captured qualified leads, and routed complex requests to the right team."
