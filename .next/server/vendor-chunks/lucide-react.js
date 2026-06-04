@@ -251,6 +251,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "(ssr)/./node_modules/lucide-react/dist/esm/icons/send.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/send.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Send)\n/* harmony export */ });\n/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ \"(ssr)/./node_modules/lucide-react/dist/esm/createLucideIcon.js\");\n/**\n * lucide-react v0.268.0 - ISC\n */\n\n\n\nconst Send = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\"Send\", [\n  [\"path\", { d: \"m22 2-7 20-4-9-9-4Z\", key: \"1q3vgg\" }],\n  [\"path\", { d: \"M22 2 11 13\", key: \"nzbqef\" }]\n]);\n\n\n//# sourceMappingURL=send.js.map\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbHVjaWRlLXJlYWN0L2Rpc3QvZXNtL2ljb25zL3NlbmQuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQTtBQUNBO0FBQ0E7O0FBRXNEOztBQUV0RCxhQUFhLGdFQUFnQjtBQUM3QixhQUFhLHlDQUF5QztBQUN0RCxhQUFhLGlDQUFpQztBQUM5Qzs7QUFFMkI7QUFDM0IiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9WZWxhci1JbmZvLVB2dC1MdGQvLi9ub2RlX21vZHVsZXMvbHVjaWRlLXJlYWN0L2Rpc3QvZXNtL2ljb25zL3NlbmQuanM/OWE0OSJdLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIGx1Y2lkZS1yZWFjdCB2MC4yNjguMCAtIElTQ1xuICovXG5cbmltcG9ydCBjcmVhdGVMdWNpZGVJY29uIGZyb20gJy4uL2NyZWF0ZUx1Y2lkZUljb24uanMnO1xuXG5jb25zdCBTZW5kID0gY3JlYXRlTHVjaWRlSWNvbihcIlNlbmRcIiwgW1xuICBbXCJwYXRoXCIsIHsgZDogXCJtMjIgMi03IDIwLTQtOS05LTRaXCIsIGtleTogXCIxcTN2Z2dcIiB9XSxcbiAgW1wicGF0aFwiLCB7IGQ6IFwiTTIyIDIgMTEgMTNcIiwga2V5OiBcIm56YnFlZlwiIH1dXG5dKTtcblxuZXhwb3J0IHsgU2VuZCBhcyBkZWZhdWx0IH07XG4vLyMgc291cmNlTWFwcGluZ1VSTD1zZW5kLmpzLm1hcFxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/lucide-react/dist/esm/icons/send.js\n");
+
+/***/ }),
+
 /***/ "(ssr)/./node_modules/lucide-react/dist/esm/icons/settings.js":
 /*!**************************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/settings.js ***!
