@@ -13,105 +13,91 @@ export default function ContactForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="border border-slate-950/10 bg-white p-6 shadow-[0_18px_60px_rgba(15,23,42,.08)] sm:p-8">
+        <form onSubmit={handleSubmit} className="space-y-6 rounded-[2rem] border border-slate-200/70 bg-slate-950/95 p-6 shadow-[0_24px_80px_rgba(15,23,42,.18)] sm:p-8">
             <div>
-                <p className="text-sm font-black uppercase tracking-[0.28em] text-orange-700">Project Inquiry</p>
-                <h2 className="mt-3 text-3xl font-black leading-tight text-slate-950">
-                    Tell us what you want to build.
-                </h2>
-                <p className="mt-3 text-sm font-semibold leading-7 text-slate-600">
+                <p className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">Project Inquiry</p>
+                <h2 className="mt-3 text-3xl font-black text-white">Tell us what you want to build.</h2>
+                <p className="mt-3 text-sm leading-7 text-slate-300">
                     Share a few details and our team will respond with next steps, suggested approach, and a meeting slot.
                 </p>
             </div>
 
-            <div className="mt-8 grid gap-5 sm:grid-cols-2">
+            <div className="grid gap-5 sm:grid-cols-2">
                 <label className="block">
-                    <span className="text-sm font-black text-slate-700">Full name</span>
+                    <span className="text-sm font-semibold text-slate-200">First Name*</span>
                     <input
-                        name="name"
+                        name="firstName"
                         required
-                        className="mt-3 w-full border border-slate-950/10 bg-slate-50 px-4 py-3 text-slate-950 outline-none transition focus:border-orange-600"
-                        placeholder="Your full name"
+                        className="mt-3 w-full rounded-3xl border border-slate-700/70 bg-slate-900/90 px-4 py-3 text-white outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
+                        placeholder="First Name"
                     />
                 </label>
                 <label className="block">
-                    <span className="text-sm font-black text-slate-700">Work email</span>
+                    <span className="text-sm font-semibold text-slate-200">Last Name</span>
+                    <input
+                        name="lastName"
+                        className="mt-3 w-full rounded-3xl border border-slate-700/70 bg-slate-900/90 px-4 py-3 text-white outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
+                        placeholder="Last Name"
+                    />
+                </label>
+                <label className="block">
+                    <span className="text-sm font-semibold text-slate-200">Email*</span>
                     <input
                         name="email"
                         type="email"
                         required
-                        className="mt-3 w-full border border-slate-950/10 bg-slate-50 px-4 py-3 text-slate-950 outline-none transition focus:border-orange-600"
-                        placeholder="you@company.com"
+                        className="mt-3 w-full rounded-3xl border border-slate-700/70 bg-slate-900/90 px-4 py-3 text-white outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
+                        placeholder="Email Address"
                     />
                 </label>
                 <label className="block">
-                    <span className="text-sm font-black text-slate-700">Phone number</span>
+                    <span className="text-sm font-semibold text-slate-200">Phone Number</span>
                     <input
                         name="phone"
-                        className="mt-3 w-full border border-slate-950/10 bg-slate-50 px-4 py-3 text-slate-950 outline-none transition focus:border-orange-600"
-                        placeholder="+91 98765 43210"
+                        className="mt-3 w-full rounded-3xl border border-slate-700/70 bg-slate-900/90 px-4 py-3 text-white outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
+                        placeholder="Phone Number"
                     />
                 </label>
                 <label className="block">
-                    <span className="text-sm font-black text-slate-700">Company</span>
+                    <span className="text-sm font-semibold text-slate-200">Company Name</span>
                     <input
                         name="company"
-                        className="mt-3 w-full border border-slate-950/10 bg-slate-50 px-4 py-3 text-slate-950 outline-none transition focus:border-orange-600"
-                        placeholder="Company name"
+                        className="mt-3 w-full rounded-3xl border border-slate-700/70 bg-slate-900/90 px-4 py-3 text-white outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
+                        placeholder="Company Name"
                     />
                 </label>
                 <label className="block">
-                    <span className="text-sm font-black text-slate-700">Service interest</span>
-                    <select
-                        name="service"
-                        className="mt-3 w-full border border-slate-950/10 bg-slate-50 px-4 py-3 text-slate-950 outline-none transition focus:border-orange-600"
-                    >
-                        <option>AI Chatbots & Virtual Assistants</option>
-                        <option>AI Agents & Workflows</option>
-                        <option>Voice & Conversational AI</option>
-                        <option>Generative AI Services</option>
-                        <option>Custom AI Development</option>
-                        <option>AI Consulting & Integration</option>
-                    </select>
-                </label>
-                <label className="block">
-                    <span className="text-sm font-black text-slate-700">Estimated timeline</span>
-                    <select
-                        name="timeline"
-                        className="mt-3 w-full border border-slate-950/10 bg-slate-50 px-4 py-3 text-slate-950 outline-none transition focus:border-orange-600"
-                    >
-                        <option>Immediately</option>
-                        <option>Within 1 month</option>
-                        <option>1-3 months</option>
-                        <option>Planning stage</option>
-                    </select>
+                    <span className="text-sm font-semibold text-slate-200">Country Name</span>
+                    <input
+                        name="country"
+                        className="mt-3 w-full rounded-3xl border border-slate-700/70 bg-slate-900/90 px-4 py-3 text-white outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
+                        placeholder="Country Name"
+                    />
                 </label>
             </div>
 
-            <label className="mt-5 block">
-                <span className="text-sm font-black text-slate-700">Project details</span>
+            <label className="block">
+                <span className="text-sm font-semibold text-slate-200">Message*</span>
                 <textarea
                     name="message"
                     required
                     rows={6}
-                    className="mt-3 w-full border border-slate-950/10 bg-slate-50 px-4 py-3 text-slate-950 outline-none transition focus:border-orange-600"
-                    placeholder="Tell us about your workflow, challenge, audience, systems to integrate, or AI idea."
+                    className="mt-3 min-h-[160px] w-full rounded-[1.75rem] border border-slate-700/70 bg-slate-900/90 px-4 py-4 text-white outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
+                    placeholder="Tell us about your workflow, challenge, audience, or AI idea."
                 />
             </label>
 
-            <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center">
-                <button type="submit" className="inline-flex w-fit items-center gap-3 bg-slate-950 px-6 py-3 text-sm font-black text-white transition hover:bg-orange-700">
-                    Send Inquiry
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <button type="submit" className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-8 py-3 text-sm font-black text-slate-950 transition hover:bg-cyan-300">
+                    Send Message
                     <Send size={17} />
                 </button>
-                <p className="text-sm font-semibold leading-6 text-slate-500">
-                    We usually reply within one business day.
-                </p>
+                <p className="text-sm text-slate-400">We usually reply within one business day.</p>
             </div>
 
             {submitted && (
-                <p className="mt-5 border border-emerald-600/20 bg-emerald-50 px-4 py-3 text-sm font-bold text-emerald-700">
-                    Thanks. Your inquiry has been received. Our team will contact you shortly.
+                <p className="rounded-3xl border border-emerald-500/20 bg-emerald-500/10 px-4 py-3 text-sm font-semibold text-emerald-200">
+                    Thanks! Your inquiry has been received. We will contact you shortly.
                 </p>
             )}
         </form>
