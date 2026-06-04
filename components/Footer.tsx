@@ -8,16 +8,17 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 sm:px-8 lg:grid-cols-[1.15fr_1fr_1fr_1fr] lg:px-10">
         <div className="space-y-5">
           <div>
-            <div className="text-2xl font-black text-white">Velar Info Pvt Ltd</div>
+            <div className="text-2xl font-black text-white">Velar Info Pvt LTD</div>
             <p className="mt-2 text-xs font-bold uppercase tracking-[0.28em] text-slate-500">Powered by AI</p>
           </div>
           <p className="max-w-sm text-sm font-semibold leading-7 text-slate-400">
             Intelligent AI chatbots, voice agents, automation workflows, and custom AI platforms for enterprises, SMBs, startups, and public sector teams.
           </p>
           <div className="space-y-2 text-sm font-semibold text-slate-400">
-            <p>hello@velarinfo.com</p>
-            <p>+91-XXXXXXXXXX</p>
-            <p>India</p>
+            <p>sales@velarinfo.com</p>
+            <p>+91-9811051060</p>
+            <p>www.velarinfo.com</p>
+            <p>X-20 First Floor ,Naveen Shahdara ,Delhi - 110032</p>
           </div>
           <div className="flex items-center gap-3 text-slate-200">
             <a href="#" aria-label="LinkedIn" className="border border-white/10 p-2 transition hover:border-orange-500 hover:text-orange-400">
@@ -76,7 +77,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10 px-6 py-5 text-center text-sm font-semibold text-slate-500 sm:px-8">
-        Copyright © 2026 Velar Info Pvt Ltd. All Rights Reserved.
+        Copyright © 2026 Velar Info Pvt LTD. All Rights Reserved.
       </div>
     </footer>
   )

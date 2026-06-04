@@ -3,7 +3,7 @@ import PageTransition from '../../components/PageTransition'
 import { companyNavItems } from '../../lib/constants'
 
 export const metadata = {
-    title: 'Company | Velar Info Pvt Ltd',
+    title: 'Company | Velar Info Pvt LTD',
     description: 'Learn about Velar Info, our careers, blog, and how to contact us for AI solutions.',
 }
 

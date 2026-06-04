@@ -6,9 +6,9 @@ import Footer from '../components/Footer'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata = {
-  title: 'Velar Info Pvt Ltd — AI Chatbots, Voice AI & Automation Workflows',
   description:
-    'Velar Info delivers enterprise-grade AI Chatbots, Voice Agents, and Automation Workflows for Enterprises, SMBs, Startups, and Government.',
+    'Velar Info Pvt LTD delivers enterprise-grade AI Chatbots, Voice Agents, and Automation Workflows for Enterprises, SMBs, Startups, and Government.',
+  title: 'Velar Info Pvt LTD — AI Chatbots, Voice AI & Automation Workflows',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

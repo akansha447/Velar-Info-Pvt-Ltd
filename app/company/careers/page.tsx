@@ -5,8 +5,8 @@ import PageTransition from '../../../components/PageTransition'
 import { jobOpenings } from '../../../lib/constants'
 
 export const metadata = {
-    title: 'Careers | Velar Info Pvt Ltd',
-    description: 'Explore open roles at Velar Info and join a fast-growing team building AI, automation, and voice solutions for Indian businesses.',
+    title: 'Careers | Velar Info Pvt LTD',
+    description: 'Explore open roles at Velar Info Pvt LTD and join a fast-growing team building AI, automation, and voice solutions for Indian businesses.',
 }
 
 export default function CareersPage() {

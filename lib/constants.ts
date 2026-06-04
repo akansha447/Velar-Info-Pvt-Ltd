@@ -442,6 +442,8 @@ export const contactCards = [
         icon: Briefcase,
         label: 'Interested in our AI products?',
         email: 'sales@velarinfo.com',
+        phone: '+91-9811051060',
+        website: 'https://www.velarinfo.com',
         buttonText: 'Email Sales Team',
     },
     {
@@ -463,7 +465,7 @@ export const contactCards = [
 export const journeyTimeline = [
     {
         date: '2024 Q1',
-        title: 'Velar Info Pvt Ltd incorporated.',
+        title: 'Velar Info Pvt LTD incorporated.',
         description: 'Core team assembled.',
     },
     {

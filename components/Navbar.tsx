@@ -19,11 +19,10 @@ export default function Navbar() {
   }, [])
 
   return (
-    <header className={`fixed left-1/2 top-4 z-50 w-[calc(100%-1.5rem)] max-w-7xl -translate-x-1/2 border transition duration-300 ${
-      scrolled
-        ? 'border-slate-950/10 bg-white/95 text-slate-950 shadow-[0_18px_60px_rgba(15,23,42,.12)] backdrop-blur-xl'
-        : 'border-white/15 bg-slate-950/58 text-white shadow-[0_18px_60px_rgba(0,0,0,.24)] backdrop-blur-xl'
-    }`}>
+    <header className={`fixed left-1/2 top-4 z-50 w-[calc(100%-1.5rem)] max-w-7xl -translate-x-1/2 border transition duration-300 ${scrolled
+      ? 'border-slate-950/10 bg-white/95 text-slate-950 shadow-[0_18px_60px_rgba(15,23,42,.12)] backdrop-blur-xl'
+      : 'border-white/15 bg-slate-950/58 text-white shadow-[0_18px_60px_rgba(0,0,0,.24)] backdrop-blur-xl'
+      }`}>
       <div className="mx-auto flex items-center justify-between px-4 py-3 sm:px-5">
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center gap-3">
@@ -31,7 +30,7 @@ export default function Navbar() {
               V
             </span>
             <span className="space-y-1">
-              <span className={`block text-xl font-black tracking-tight ${scrolled ? 'text-slate-950' : 'text-white'}`}>Velar Info</span>
+              <span className={`block text-xl font-black tracking-tight ${scrolled ? 'text-slate-950' : 'text-white'}`}>Velar Info Pvt LTD</span>
               <span className={`block text-xs uppercase tracking-[0.28em] ${scrolled ? 'text-slate-500' : 'text-white/58'}`}>Powered by AI</span>
             </span>
           </Link>
@@ -42,7 +41,7 @@ export default function Navbar() {
                 <button className={`inline-flex items-center gap-1 transition ${scrolled ? 'hover:text-orange-700' : 'hover:text-cyan-200'}`}>
                   {group.label} <ChevronDown size={14} />
                 </button>
-                <div className="invisible pointer-events-none absolute left-0 top-full z-30 mt-3 w-80 border border-slate-950/10 bg-white/95 p-4 opacity-0 shadow-[0_18px_60px_rgba(15,23,42,.14)] backdrop-blur-xl transition duration-200 group-hover:visible group-hover:pointer-events-auto group-hover:opacity-100">
+                <div className="invisible pointer-events-none absolute left-0 top-full z-30 mt-1 w-80 -translate-y-1 border border-slate-950/10 bg-white/95 p-4 opacity-0 shadow-[0_18px_60px_rgba(15,23,42,.14)] backdrop-blur-xl transition duration-200 group-hover:visible group-hover:pointer-events-auto group-hover:opacity-100">
                   <ul className="space-y-2 text-sm text-slate-700">
                     {group.items.map((item) => {
                       const active = item.href && pathname === item.href
@@ -93,7 +92,7 @@ export default function Navbar() {
           >
             <div className="flex items-center justify-between">
               <div>
-                <div className="text-lg font-semibold text-slate-950">Velar Info</div>
+                <div className="text-lg font-semibold text-slate-950">Velar Info Pvt LTD</div>
                 <p className="text-sm text-slate-500">Powered by AI</p>
               </div>
               <button
@@ -118,7 +117,7 @@ export default function Navbar() {
                         key={item.label}
                         href={item.href ?? '#'}
                         onClick={() => setMenuOpen(false)}
-                    className="block w-full px-4 py-3 text-left text-sm text-slate-700 transition hover:bg-white hover:text-orange-700"
+                        className="block w-full px-4 py-3 text-left text-sm text-slate-700 transition hover:bg-white hover:text-orange-700"
                       >
                         {item.label}
                       </Link>

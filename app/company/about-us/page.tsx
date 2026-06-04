@@ -16,7 +16,7 @@ import {
 import { servicesData } from '../../../lib/constants'
 
 export const metadata = {
-    title: 'About Us | Velar Info Pvt Ltd',
+    title: 'About Us | Velar Info Pvt LTD',
     description:
         'Learn how Velar Info builds AI products, automation workflows, voice agents, and custom AI platforms for modern businesses.',
 }
@@ -76,7 +76,7 @@ export default function AboutPage() {
                             We build AI systems that make business operations smarter.
                         </h1>
                         <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-white/72">
-                            Velar Info Pvt Ltd is an AI-first technology partner helping organizations design, build, integrate, and scale intelligent digital products, automation workflows, and conversational experiences.
+                            Velar Info Pvt LTD is an AI-first technology partner helping organizations design, build, integrate, and scale intelligent digital products, automation workflows, and conversational experiences.
                         </p>
                         <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                             <Link href="/company/contact" className="inline-flex w-fit items-center gap-3 bg-orange-600 px-6 py-3 text-sm font-black text-white transition hover:bg-orange-700">

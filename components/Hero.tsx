@@ -29,34 +29,28 @@ const featureCards = [
 ]
 
 const stats = [
-  { value: '500+', label: 'Clients served' },
-  { value: '10M+', label: 'AI interactions handled' },
-  { value: '95%', label: 'Automation accuracy' },
+  { value: '120+', label: 'Early users onboarded' },
+  { value: '50K+', label: 'AI interactions handled' },
+  { value: '92%', label: 'Automation accuracy' },
   { value: '24/7', label: 'AI support coverage' },
 ]
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-slate-950 text-white">
-      <div className="relative flex min-h-screen items-end overflow-hidden px-6 pb-10 pt-36 sm:px-8 lg:px-10">
-        <video
-          className="absolute inset-0 h-full w-full object-cover opacity-65 saturate-75"
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80"
-        >
-          <source src="https://cdn.coverr.co/videos/coverr-typing-on-computer-keyboard-5634/1080p.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_76%_24%,rgba(37,99,235,.34),transparent_28%),linear-gradient(90deg,rgba(2,6,23,.98),rgba(2,6,23,.76)_48%,rgba(2,6,23,.34)),linear-gradient(180deg,rgba(2,6,23,.22),rgba(2,6,23,.96))]" />
+      <div className="relative flex min-h-screen items-center overflow-hidden px-6 pb-10 pt-24 sm:px-8 lg:px-10">
+        <div
+          className="absolute inset-0 h-full w-full bg-center bg-cover opacity-95 saturate-75 z-0"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80')" }}
+        />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_76%_24%,rgba(37,99,235,.34),transparent_28%),linear-gradient(90deg,rgba(2,6,23,.98),rgba(2,6,23,.76)_48%,rgba(2,6,23,.34)),linear-gradient(180deg,rgba(2,6,23,.22),rgba(2,6,23,.96))] z-10" />
 
-        <div className="relative mx-auto grid w-full max-w-7xl gap-10 lg:grid-cols-[1.08fr_.92fr] lg:items-end">
+        <div className="relative z-20 mx-auto grid w-full max-w-7xl gap-10 lg:grid-cols-[1.08fr_.92fr] lg:items-end">
           <motion.div
-            initial={{ opacity: 0, y: 28 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="max-w-5xl"
+            className="max-w-5xl opacity-100"
           >
             <p className="text-sm font-black uppercase tracking-[0.28em] text-orange-400">
               AI-Powered Products. Smart Technology. Meaningful Impact.
@@ -65,7 +59,7 @@ export default function Hero() {
               We build intelligent digital products for ambitious teams.
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-white/74 sm:text-xl">
-              Velar Info designs AI chatbots, voice agents, automation workflows, and custom AI platforms that turn complex operations into measurable business outcomes.
+              Velar Info Pvt LTD designs AI chatbots, voice agents, automation workflows, and custom AI platforms that turn complex operations into measurable business outcomes.
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <Link href="/company/contact" className="inline-flex w-fit items-center gap-3 bg-orange-600 px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-orange-700">
@@ -80,10 +74,10 @@ export default function Hero() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 28 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15, ease: 'easeOut' }}
-            className="grid gap-3 border border-white/10 bg-white/10 p-4 backdrop-blur-xl"
+            className="grid gap-3 border border-white/10 bg-white/10 p-4 backdrop-blur-xl opacity-100"
           >
             {[
               { icon: BrainCircuit, label: 'AI Strategy', text: 'Roadmaps tied to business outcomes' },

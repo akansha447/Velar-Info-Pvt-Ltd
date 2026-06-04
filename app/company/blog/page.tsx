@@ -5,8 +5,8 @@ import PageTransition from '../../../components/PageTransition'
 import { blogPosts } from '../../../lib/constants'
 
 export const metadata = {
-    title: 'Blog | Velar Info Pvt Ltd',
-    description: 'Read insights, customer stories, and product news from Velar Info about AI automation, voice AI, and enterprise innovation.',
+    title: 'Blog | Velar Info Pvt LTD',
+    description: 'Read insights, customer stories, and product news from Velar Info Pvt LTD about AI automation, voice AI, and enterprise innovation.',
 }
 
 export default function BlogPage() {

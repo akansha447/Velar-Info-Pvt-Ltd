@@ -1,8 +1,8 @@
 import ContactForm from '../../../components/contact/ContactForm'
 
 export const metadata = {
-    title: 'Contact | Velar Info Pvt Ltd',
-    description: 'Contact Velar Info for AI projects, digital transformation, and business automation solutions.',
+    title: 'Contact | Velar Info Pvt LTD',
+    description: 'Contact Velar Info Pvt LTD for AI projects, digital transformation, and business automation solutions.',
 }
 
 export default function ContactPage() {

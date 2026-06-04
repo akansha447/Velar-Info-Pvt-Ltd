@@ -48,7 +48,7 @@ export default function CTABanner() {
               {['AI Strategy', 'Automation', 'Secure Rollout'].map((item) => (
                 <div key={item} className="border border-white/10 bg-white/10 p-4 text-white backdrop-blur-xl">
                   <span className="block text-sm font-black">{item}</span>
-                  <span className="mt-1 block text-xs font-semibold uppercase tracking-[0.16em] text-white/58">Velar Info</span>
+                  <span className="mt-1 block text-xs font-semibold uppercase tracking-[0.16em] text-white/58">Velar Info Pvt LTD</span>
                 </div>
               ))}
             </div>

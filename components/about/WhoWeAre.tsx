@@ -14,7 +14,7 @@ export default function WhoWeAre() {
             <div className="space-y-6">
                 <h2 className="text-3xl font-extrabold text-white">Who We Are</h2>
                 <p className="max-w-xl text-base leading-8 text-slate-300">
-                    Velar Info Pvt Ltd is an Indian AI technology company specializing in Conversational AI, Intelligent Automation, Voice AI, and Custom AI Development. We partner with enterprises, SMBs, startups, and government organizations to deploy AI that drives real business outcomes.
+                    Velar Info Pvt LTD is an Indian AI technology company specializing in Conversational AI, Intelligent Automation, Voice AI, and Custom AI Development. We partner with enterprises, SMBs, startups, and government organizations to deploy AI that drives real business outcomes.
                 </p>
                 <p className="max-w-xl text-base leading-8 text-slate-300">
                     We don't just build AI tools — we build AI that works inside your existing systems, understands your industry, and operates reliably at scale.

@@ -17,7 +17,7 @@ export function generateMetadata({ params }: BlogPageProps): Metadata {
     const post = blogPosts.find((postItem) => postItem.slug === params.slug)
     if (!post) {
         return {
-            title: 'Post not found | Velar Info Pvt Ltd',
+            title: 'Post not found | Velar Info Pvt LTD',
             description: 'The requested blog article could not be found.',
         }
     }
